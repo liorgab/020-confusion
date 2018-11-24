@@ -1,8 +1,18 @@
+.modal-body {
+  background-color: #D1C4E9;
+}
+.modal-header {
+  background-color: #512DA8;
+  color: #ddd;
+}
+.modal-header button {
+  color: #ddd;
+}
 .row-header {
   margin: 0px auto;
   padding: 0px 0px;
 }
-.row-contebt {
+.row-content {
   margin: 0px auto;
   padding: 0px 0px;
 }
