@@ -7,9 +7,10 @@ $background-pale: #D1C4E9;
 
 $carousel-item-height: 300px;
 
+
 //less mixin
 
-.zero-margin ($pad-up-dn: 0px , $pad-left-right: 0px) {
+@mixin zero-margin ($pad-up-dn: 0px , $pad-left-right: 0px) {
   margin: 0px auto;
   padding: $pad-up-dn $pad-left-right;
 }
@@ -24,10 +25,6 @@ $carousel-item-height: 300px;
   min-height: 400px;
 }
 
-.footer {
-  background-color: $background-pale;
-  @include zero-margin(20px,0px);
-}
 
 .jumbotron{
   @include zero-margin(70px, 30px);
