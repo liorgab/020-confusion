@@ -30,20 +30,11 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
 
             </ul>
-            <!-- original login button
             <span class="navbar-text">
               <a data-toggle="modal" data-target="#loginModal">
                 <span class="fa fa-sign-in">Login</span>
               </a>
             </span>
-            -->
-            <!-- script login button -->
-            <span id="login-button" class="navbar-text">
-              <a>
-                <span class="fa fa-sign-in">Login</span>
-              </a>
-            </span>
-
         </div>
         </div>
     </nav>
@@ -176,25 +167,20 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-5">
+                <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p class="d-none d-sm-block">We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
                     <img src="./img/logo.png" class="img-fluid">
                 </div>
-                <!-- reserve table button - original button
+                <!-- reserve table button -->
                 <div class="col-12 col-sm-3 align-self-center">
                   <a role="button" data-toggle="modal" data-target="#reserveModal" class="btn btn-block nav-link btn-warning">
                     <span>Reserve Table</span>
                   </a>
                 </div>
-                 -->
-                 <!-- reserve table button - script button -->
-                 <div id="reserve-button" class="col-12 col-sm-4 align-self-center">
-                   <a  class="btn btn-block nav-link btn-warning">
-                     <span>Reserve Table</span>
-                   </a>
+
             </div>
         </div>
     </header>
@@ -418,7 +404,34 @@
      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<<<<<<< HEAD
      <script src="js/scripts.js"></script>
+=======
+     <script>
+        $(document).ready(function(){
+          <!-- carousel interval script -->
+          $("#mycarousel").carousel({ interval: 1000 });
+          <!-- carousel button script-->
+          $("#carouselButton").click(function(){
+            if ($('#carouselButton').children('span').hasClass('fa-pause'))
+             {
+              $("#mycarousel").carousel('pause');
+              $("#carouselButton").children('span').removeClass('fa-pause');
+              $("#carouselButton").children('span').addClass('fa-play');
+             }
+
+            else if ($('#carouselButton').children('span').hasClass('fa-play'))
+             {
+              $("#mycarousel").carousel('cycle');
+              $("#carouselButton").children('span').removeClass('fa-play');
+              $("#carouselButton").children('span').addClass('fa-pause');
+              }
+
+          });
+        })
+     </script>
+
+>>>>>>> parent of 06b29ca... asignment 4 modal by script
 </body>
 
 </html>
